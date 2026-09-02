@@ -1,0 +1,197 @@
+/* === HEADER === */
+
+/* border-bottom:
+Le dará un borde inferior al header con un color azul y un grosor definido de 10 pixeles */
+
+header {
+    border-bottom: 10px solid #005f7f;
+}
+
+/* === ELEMENTOS DEL MENÚ/NAVBAR === */
+
+/* margin:
+Le dará espacio de 20 pixeles alrededor de los elementos
+del menú de navegación. */
+
+/* font-size:
+Le dará un tamaño de 20 pixeles a los textos del menú. */
+
+
+.navbar-nav .nav-link {
+    margin: 20px;
+    font-size: 20px;
+}
+
+/*Le daremos un tamaño de 20 pixeles a los parrafos y elementos de listas*/
+
+p, li {
+    font-size: 20px;
+}
+
+
+/* === COLORES PERSONALIZADOS === */
+
+.color-azul {
+    color: #005f7f;
+}
+
+/* === TEXTO DEL CARRUSEL === */
+
+.textoCarrusel {
+
+    /* position: aboslute
+    Permite posicionar el texto libremente dentro del carrusel.
+    Se utiliza junto con top y left para definir su ubicación. */
+
+    position: absolute;
+
+    /* top:
+    Ubica la parte superior del texto al 40% de la altura
+    del elemento que lo contiene.*/
+    top: 40%;
+
+    /*
+    Ubica el texto a un 10% desde el borde izquierdo
+    del elemento que lo contiene.
+    */
+    left: 10%;
+
+    /*
+    Define el color del texto como blanco para que
+    sea visible sobre las imágenes del carrusel.
+    */
+    color: white;
+
+    /*
+    Alinea el texto hacia el lado izquierdo.
+    */
+    text-align: left;
+
+    /*
+    Establece un ancho máximo de 400 píxeles para evitar
+    que el texto ocupe demasiado espacio horizontal.
+    */
+    max-width: 400px;
+
+    /*
+    Hace que el texto aparezca en negrita.
+    */
+    font-weight: bold;
+
+}
+
+/* === FOOTER === */
+
+/* border-TOP:
+Le dará un borde superior al footer con un color azul y un grosor definido de 10 pixeles */
+
+footer {
+    border-top: 10px solid #005f7f;
+}
+
+
+/* =========================================================
+   CARRITO DE COMPRA
+   ========================================================= */
+
+/* Imagen de los productos */
+.cart-product-image {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 8px;
+}
+
+/* Elementos individuales del carrito */
+.cart-item {
+    padding: 8px 0;
+}
+
+/* Efecto suave sobre los botones de cantidad */
+.cart-item .btn-outline-secondary {
+    min-width: 35px;
+}
+
+/* Ajustes para teléfonos */
+@media (max-width: 767px) {
+
+    .cart-product-image {
+        height: 100px;
+    }
+
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1280px) {
+
+    .cart-product-image {
+        height: 130px;
+    }
+
+}
+
+
+/* =========================================================
+   MIS PEDIDOS
+   ========================================================= */
+
+/* Cada pedido */
+.pedido-item {
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto visual al pasar el cursor */
+.pedido-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Ajustes para teléfonos */
+@media (max-width: 767px) {
+
+    .pedido-item .btn {
+        width: 100%;
+    }
+
+}
+
+/* =========================================================
+   DETALLE DEL PEDIDO
+   ========================================================= */
+
+/* Estado del pedido */
+.pedido-estado {
+    font-size: 0.9rem;
+}
+
+/* Productos del pedido */
+.detalle-producto {
+    padding: 8px 0;
+}
+
+/* Imagen de los productos */
+.detalle-producto-imagen {
+    width: 100%;
+    height: 110px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 8px;
+}
+
+/* Ajustes para teléfonos */
+@media (max-width: 767px) {
+
+    .detalle-producto-imagen {
+        height: 95px;
+    }
+
+}
+
+/* Ajustes para escritorio */
+@media (min-width: 1280px) {
+
+    .detalle-producto-imagen {
+        height: 120px;
+    }
+
+}

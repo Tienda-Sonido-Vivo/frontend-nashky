@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonido Vivo | Iniciar Sesión</title>
+
+    <!-- Link a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link a CSS personalizado -->
+    <link rel="stylesheet" href="SonidoVivoEstilos.css">
+</head>
+<body>
+
+    <!-- === HEADER === -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand fw-bold fs-4 text-white" href="SonidoVivo.html">
+                    Sonido <span class="color-azul">Vivo</span>
+                </a>
+
+                <!-- BOTÓN HAMBURGUESA -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- MENÚ -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="SonidoVivo.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="sobreNosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-white active" href="login.html">Iniciar Sesión</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="registro.html">Registrarme</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- === CONTENIDO PRINCIPAL: INICIAR SESIÓN === -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card shadow p-4 border-0 rounded-3">
+                    <h2 class="text-center fw-bold mb-4">Iniciar Sesión</h2>
+                    
+                    <form onsubmit="event.preventDefault(); ingresar();">
+                        <div class="mb-3">
+                            <label for="correo" class="form-label fw-bold">Correo Electrónico</label>
+                            <input type="email" class="form-control form-control-lg" id="correo" placeholder="ejemplo@correo.com" maxlength="100">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="clave" class="form-label fw-bold">Contraseña</label>
+                            <input type="password" class="form-control form-control-lg" id="clave" placeholder="••••••••" maxlength="10">
+                        </div>
+
+                        <div class="d-grid gap-2 mt-4">
+                            <button type="button" onclick="ingresar()" class="btn text-white btn-lg" style="background-color: #005f7f;">
+                                Ingresar
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="text-center mt-3">
+                        <p class="mb-0 text-muted fs-6">¿No tienes una cuenta? <a href="registro.html" class="color-azul fw-bold">Regístrate aquí</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p class="mb-1">© 2026 Sonido Vivo - Viña del Mar</p>
+        <small class="text-secondary">Contacto: tienda.sonido.vivo@gmail.cl | Teléfono: +56 9 5555 5555</small>
+    </footer>
+
+    <!-- JS Bootstrap y Script Principal -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
