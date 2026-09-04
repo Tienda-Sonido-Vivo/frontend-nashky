@@ -2,7 +2,6 @@
 
 /* border-bottom:
 Le dará un borde inferior al header con un color azul y un grosor definido de 10 pixeles */
-
 header {
     border-bottom: 10px solid #005f7f;
 }
@@ -10,24 +9,20 @@ header {
 /* === ELEMENTOS DEL MENÚ/NAVBAR === */
 
 /* margin:
-Le dará espacio de 20 pixeles alrededor de los elementos
-del menú de navegación. */
+Le dará espacio horizontal a los elementos del menú de navegación.
+(Se ajusta a 0 10px para evitar desbordamiento con la barra de búsqueda). */
 
 /* font-size:
 Le dará un tamaño de 20 pixeles a los textos del menú. */
-
-
 .navbar-nav .nav-link {
-    margin: 20px;
+    margin: 0 10px;
     font-size: 20px;
 }
 
-/*Le daremos un tamaño de 20 pixeles a los parrafos y elementos de listas*/
-
+/* Le daremos un tamaño de 20 pixeles a los parrafos y elementos de listas */
 p, li {
     font-size: 20px;
 }
-
 
 /* === COLORES PERSONALIZADOS === */
 
@@ -35,60 +30,49 @@ p, li {
     color: #005f7f;
 }
 
+/* Estilo para los ítems del menú desplegable al pasar el ratón */
+.dropdown-menu-dark .dropdown-item:hover {
+    background-color: #005f7f;
+}
+
 /* === TEXTO DEL CARRUSEL === */
 
 .textoCarrusel {
-
-    /* position: aboslute
+    /* position: absolute
     Permite posicionar el texto libremente dentro del carrusel.
     Se utiliza junto con top y left para definir su ubicación. */
-
     position: absolute;
 
     /* top:
     Ubica la parte superior del texto al 40% de la altura
-    del elemento que lo contiene.*/
+    del elemento que lo contiene. */
     top: 40%;
 
-    /*
+    /* left:
     Ubica el texto a un 10% desde el borde izquierdo
-    del elemento que lo contiene.
-    */
+    del elemento que lo contiene. */
     left: 10%;
 
-    /*
-    Define el color del texto como blanco para que
-    sea visible sobre las imágenes del carrusel.
-    */
+    /* Color del texto blanco */
     color: white;
 
-    /*
-    Alinea el texto hacia el lado izquierdo.
-    */
+    /* Alinea el texto hacia el lado izquierdo */
     text-align: left;
 
-    /*
-    Establece un ancho máximo de 400 píxeles para evitar
-    que el texto ocupe demasiado espacio horizontal.
-    */
+    /* Ancho máximo de 400 píxeles */
     max-width: 400px;
 
-    /*
-    Hace que el texto aparezca en negrita.
-    */
+    /* Hace que el texto aparezca en negrita */
     font-weight: bold;
-
 }
 
 /* === FOOTER === */
 
-/* border-TOP:
+/* border-top:
 Le dará un borde superior al footer con un color azul y un grosor definido de 10 pixeles */
-
 footer {
     border-top: 10px solid #005f7f;
 }
-
 
 /* =========================================================
    CARRITO DE COMPRA
@@ -115,22 +99,17 @@ footer {
 
 /* Ajustes para teléfonos */
 @media (max-width: 767px) {
-
     .cart-product-image {
         height: 100px;
     }
-
 }
 
 /* Ajustes para pantallas grandes */
 @media (min-width: 1280px) {
-
     .cart-product-image {
         height: 130px;
     }
-
 }
-
 
 /* =========================================================
    MIS PEDIDOS
@@ -148,11 +127,9 @@ footer {
 
 /* Ajustes para teléfonos */
 @media (max-width: 767px) {
-
     .pedido-item .btn {
         width: 100%;
     }
-
 }
 
 /* =========================================================
@@ -180,18 +157,14 @@ footer {
 
 /* Ajustes para teléfonos */
 @media (max-width: 767px) {
-
     .detalle-producto-imagen {
         height: 95px;
     }
-
 }
 
 /* Ajustes para escritorio */
 @media (min-width: 1280px) {
-
     .detalle-producto-imagen {
         height: 120px;
     }
-
 }
