@@ -1,3 +1,17 @@
+/* =========================================================
+   ESTILOS GLOBALES
+   ========================================================= */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 /* === HEADER === */
 
 /* border-bottom:
@@ -9,8 +23,8 @@ header {
 /* === ELEMENTOS DEL MENÚ/NAVBAR === */
 
 /* margin:
-Le dará espacio horizontal a los elementos del menú de navegación.
-(Se ajusta a 0 10px para evitar desbordamiento con la barra de búsqueda). */
+Le dará espacio de 20 pixeles horizontal a los elementos del menú de navegación.
+(Ajustado de margin: 20px a margin: 0 10px para evitar desbordes con la barra de búsqueda). */
 
 /* font-size:
 Le dará un tamaño de 20 pixeles a los textos del menú. */
@@ -19,21 +33,35 @@ Le dará un tamaño de 20 pixeles a los textos del menú. */
     font-size: 20px;
 }
 
-/* Le daremos un tamaño de 20 pixeles a los parrafos y elementos de listas */
+/* Le daremos un tamaño de 20 pixeles a los párrafos y elementos de listas */
 p, li {
     font-size: 20px;
+    text-align: left;
 }
 
 /* === COLORES PERSONALIZADOS === */
 
+/* !important asegura que el azul sobrescriba los estilos de Bootstrap (como navbar-dark o text-white) */
 .color-azul {
-    color: #005f7f;
+    color: #005f7f !important;
 }
 
-/* Estilo para los ítems del menú desplegable al pasar el ratón */
+/* Estilo al pasar el cursor sobre los ítems del desplegable */
 .dropdown-menu-dark .dropdown-item:hover {
     background-color: #005f7f;
 }
+
+/* === FOOTER === */
+
+/* border-top:
+Le dará un borde superior al footer con un color azul y un grosor definido de 10 pixeles */
+footer {
+    border-top: 10px solid #005f7f;
+}
+
+/* =========================================================
+   PÁGINA PRINCIPAL
+   ========================================================= */
 
 /* === TEXTO DEL CARRUSEL === */
 
@@ -53,25 +81,29 @@ p, li {
     del elemento que lo contiene. */
     left: 10%;
 
-    /* Color del texto blanco */
+    /* Define el color del texto como blanco para que
+    sea visible sobre las imágenes del carrusel. */
     color: white;
 
-    /* Alinea el texto hacia el lado izquierdo */
+    /* Alinea el texto hacia el lado izquierdo. */
     text-align: left;
 
-    /* Ancho máximo de 400 píxeles */
+    /* Establece un ancho máximo de 400 píxeles para evitar
+    que el texto ocupe demasiado espacio horizontal. */
     max-width: 400px;
 
-    /* Hace que el texto aparezca en negrita */
+    /* Hace que el texto aparezca en negrita. */
     font-weight: bold;
 }
 
-/* === FOOTER === */
+.seccion-principal {
+    background-color: rgb(230, 236, 241);
+    border-radius: 10px;
+    padding: 10px;
+}
 
-/* border-top:
-Le dará un borde superior al footer con un color azul y un grosor definido de 10 pixeles */
-footer {
-    border-top: 10px solid #005f7f;
+.imagen-principal {
+    border-radius: 10px;
 }
 
 /* =========================================================
