@@ -65,14 +65,40 @@
             </div>
         </section>
 
-        <!-- UBICACIÓN Y CONTACTO -->
+        <!-- UBICACIÓN Y FORMULARIO DE CONTACTO (4.4 & 6.2) -->
         <section id="ubicacion" class="row border-top pt-5">
             <div class="col-12 col-md-6 mb-4" id="contactos">
                 <h3 class="fw-bold mb-3">Contáctanos</h3>
-                <p><strong>Ubicación:</strong> Viña del Mar, Región de Valparaíso</p>
-                <p><strong>Correo Electrónico:</strong> tienda.sonido.vivo@gmail.cl</p>
-                <p><strong>Teléfono / WhatsApp:</strong> +56 9 5555 5555</p>
+                <p class="mb-3 text-muted">Ubicación: Viña del Mar, Región de Valparaíso | WhatsApp: +56 9 5555 5555</p>
+
+                <!-- FORMULARIO DE CONTACTO -->
+                <form id="formContacto" novalidate>
+                    <!-- Nombre (Obligatorio, máx 100) -->
+                    <div class="mb-3">
+                        <label for="nombreContacto" class="form-label font-weight-bold">Nombre *</label>
+                        <input type="text" class="form-control" id="nombreContacto" maxlength="100" placeholder="Tu nombre completo">
+                        <div class="invalid-feedback">El nombre es obligatorio y debe tener máximo 100 caracteres.</div>
+                    </div>
+
+                    <!-- Correo (Máx 100, formato válido) -->
+                    <div class="mb-3">
+                        <label for="correoContacto" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correoContacto" maxlength="100" placeholder="ejemplo@correo.com">
+                        <div class="invalid-feedback">Ingresa un correo con formato válido (máximo 100 caracteres).</div>
+                    </div>
+
+                    <!-- Comentario (Obligatorio, máx 500) -->
+                    <div class="mb-3">
+                        <label for="mensajeContacto" class="form-label">Comentario o mensaje *</label>
+                        <textarea class="form-control" id="mensajeContacto" rows="4" maxlength="500" placeholder="Escribe tu consulta aquí..."></textarea>
+                        <div class="invalid-feedback">El comentario es obligatorio y debe tener máximo 500 caracteres.</div>
+                    </div>
+
+                    <!-- Botón Enviar -->
+                    <button type="submit" class="btn text-white fw-bold" style="background-color: #005f7f;">Enviar mensaje</button>
+                </form>
             </div>
+
             <div class="col-12 col-md-6">
                 <h3 class="fw-bold mb-3">Dónde Encontrarnos</h3>
                 <div class="bg-secondary text-white rounded p-5 text-center">
@@ -91,5 +117,7 @@
 
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu JS personalizado de validación -->
+    <script src="main.js"></script>
 </body>
 </html>
